@@ -1,0 +1,36 @@
+---
+---
+@import "{{ site.theme }}";
+
+.page-header {
+  > .page-header-content {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  &.small {
+    text-align: inherit;
+    @include large {
+      padding: 1rem 0;
+    }
+
+    @include medium {
+      padding: 1rem 4rem;
+    }
+
+    @include small {
+      padding: 1rem 1rem;
+    }
+  }
+}
+
+.posts {
+  li {
+    list-style: none;
+  }
+}
+
